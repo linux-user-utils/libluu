@@ -23,6 +23,6 @@ if (BIG_WARN)
     PRIVATE -Wall -Wextra -pedantic -Werror
   )
 endif (BIG_WARN)
-
+include_directories (./include/)
 include(GNUInstallDirs)
 install(TARGETS luu)
