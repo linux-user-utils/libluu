@@ -25,4 +25,4 @@ if (BIG_WARN)
 endif (BIG_WARN)
 
 include(GNUInstallDirs)
-install(luu)
+install(TARGETS luu)
