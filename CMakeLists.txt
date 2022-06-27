@@ -17,6 +17,8 @@ set_target_properties(luu
   CXX_STANDARD_REQUIRED YES
   VERSION ${PROJECT_VERSION}
   SOVERSION ${PROJECT_VERSION}
+  PUBLIC_HEADER 
+"include/luu/backlight.hpp;include/luu/concepts.hpp;include/luu/logging.hpp;include/luu/parse_arguments.hpp;include/luu/utility.hpp"
 )
 if (BIG_WARN)
   target_compile_options( luu
