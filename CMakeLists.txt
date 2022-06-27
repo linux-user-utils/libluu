@@ -5,11 +5,16 @@ project(libluu
   LANGUAGES CXX)
 set(CMAKE_BUILD_TYPE Debug)
 set(CMAKE_EXPORT_COMPILE_COMMANDS ON)
-
 option(BIG_WARN "Use strict compiler flags" ON)
+include_directories(./include/) # For #include <foo> in IDE
+
+configure_file(src/version.hpp.in version.hpp)
+
+
 
 add_library (luu SHARED
   src/backlight.cpp
+
 )
 set_target_properties(luu
   PROPERTIES
@@ -25,6 +30,9 @@ if (BIG_WARN)
     PRIVATE -Wall -Wextra -pedantic -Werror
   )
 endif (BIG_WARN)
-include_directories (./include/)
+
+
 include(GNUInstallDirs)
-install(TARGETS luu)
+install(TARGETS luu
+  PUBLIC_HEADER DESTINATION ${CMAKE_INSTALL_INCLUDEDIR}/libluu/
+)
