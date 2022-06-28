@@ -1,6 +1,6 @@
 #include <luu/backlight.hpp>
 #include <luu/utility.hpp>
-
+#include <version.hpp>
 namespace backlight {
   using namespace utility;
 
