@@ -10,7 +10,6 @@ include_directories(./include/) # For #include <foo> in IDE
 
 
 ## Build Library ##
-include_directories(include)
 add_library (luu SHARED
   src/backlight.cpp
   src/utility.cpp
