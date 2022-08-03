@@ -39,12 +39,12 @@ endif (BIG_WARN)
 endif ()
 
 ## Installation ##
-configure_file(src/libluu.pc.in libluu.pc @ONLY)
+#configure_file(src/libluu.pc.in libluu.pc @ONLY)
 include(GNUInstallDirs)
 install(TARGETS luu
   PUBLIC_HEADER DESTINATION ${CMAKE_INSTALL_INCLUDEDIR}/libluu/
 )
 
 ## pkgconfig ##
-install(FILES ${CMAKE_BINARY_DIR}/libluu.pc
-  DESTINATION ${CMAKE_INSTALL_DATAROOTDIR}/pkgconfig/)
+#install(FILES ${CMAKE_BINARY_DIR}/libluu.pc
+#  DESTINATION ${CMAKE_INSTALL_DATAROOTDIR}/pkgconfig/)
