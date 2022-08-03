@@ -10,7 +10,7 @@ namespace backlight {
     return returner;
   }
 /** takes a sysfs path to a backlight device and returns current brightness in
- * terms of percent of maximum brightess. */
+ * terms of percent of maximum brightness. */
 float get_current_brightness_percentage(const path device) {
   int max = get_int_from_file(device / "max_brightness");
   int cur = get_int_from_file(device / "actual_brightness");

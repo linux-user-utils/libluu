@@ -25,7 +25,7 @@ set_target_properties(luu
   VERSION ${PROJECT_VERSION}
   SOVERSION ${PROJECT_VERSION}
   PUBLIC_HEADER 
-"include/luu/backlight.hpp;include/luu/concepts.hpp;include/luu/logging.hpp;include/luu/parse_arguments.hpp;include/luu/utility.hpp"
+"include/libluu/backlight.hpp;include/libluu/concepts.hpp;include/libluu/logging.hpp;include/libluu/parse_arguments.hpp;include/libluu/utility.hpp"
 )
 
 # # Set compiler warnings ##
